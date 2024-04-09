@@ -2,9 +2,7 @@ import pytest
 from playwright.sync_api import Page,expect
 from pages.EcoPage import EcoPage
 
-
-
-# создаем инстанс ecopage для каждого теста И скриншот
+# создаем инстанс ecopage для каждого теста и скриншот
 @pytest.fixture
 def eco_page(page: Page, request):
     eco_page_inst = EcoPage(page)
